@@ -78,7 +78,10 @@
 // listen to clicks on the increment button
 // increment the count variable when the button is clicked (log it out )
 // change the count-el in the html to reflect the new count 
-   
+
+let saveEl = document.GetElementById("save-el")
+console.log(saveEl)
+
 // grab the count-el element, store it in a countEL variable 
 let countEL = document.getElementById("count-el")
 console.log(countEL)
@@ -91,6 +94,8 @@ function increment(){
 }
 
 function save(){
+   let countStr = count + "-"
+   saveEl.innertext += count
     console.log(count)
 }
 save()
