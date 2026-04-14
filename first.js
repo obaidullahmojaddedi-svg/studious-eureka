@@ -90,12 +90,14 @@ let count = 0
 function increment(){
     count = count + 1
   //  set countEL's innertext to the count 
-  countEL.innerText = count
+  countEL.textContent = count
 }
 
 function save(){
    let countStr = count + "-"
-   saveEl.innertext += count
+   saveEl.textContent += count
+    countEl.textContent = 0
+    count = 0
     console.log(count)
 }
 save()
