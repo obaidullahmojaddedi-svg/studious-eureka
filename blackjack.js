@@ -25,3 +25,10 @@ messageEL.textContent = message
 // console.log(isAlive)
 // console.log(message)
 }
+
+function newcard(){
+    console.log("Drawing a new card from the deck!")
+    let card = 5
+    sum += card
+    startgame()
+}
