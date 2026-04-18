@@ -1,6 +1,7 @@
 
 let firstCard = 11
 let secondCard = 10
+let card = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let blackjack = false
 let isAlive = true
@@ -9,8 +10,11 @@ let messageEL = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 function startgame(){
-    cardEl.textContent = "card: " + firstCard +"  "+ secondCard
-    sumEl.textContent = "Sum: " + sum
+        card.El = text.Content = "carrd :"
+    for (let i = 0; card.lenght; i++ ){
+        cardEl.contentText = card[i] + " "
+    }
+            sumEl.textContent = "Sum: " + sum
 if (sum < 21) {
   message = "Do want to draw a new card?"
 }else if (sum === 21) {
